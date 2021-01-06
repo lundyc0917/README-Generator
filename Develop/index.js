@@ -95,7 +95,8 @@ const writeToFile = (response) =>
   ## Questions
   ${response.questions}
   
-  Made with README Generator`;
+
+  ##### *Made with README Generator*`;
 
 // initialize program
 const init = async () => {

@@ -58,15 +58,25 @@ const questions = () => {
       name: 'questions',
       message: 'Enter questions: ',
     },
+    {
+      type: 'input', 
+      name: 'gitHubName',
+      message: 'What is your GitHub User Name?',
+    },
+    {
+      type: 'input', 
+      name: 'email',
+      message: 'What is your E-Mail Address?',
+    }
   ]);
 }
 
-// write file based on responses
+// write the README file based on user responses
 const writeToFile = (response) =>
   `# ${response.title}
 
   ## License
-  ![badge](https://img.shields.io/static/v1?label=License&message=${response.license}&color=blue)
+  ![badge](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
   
   ## Table of Contents
    - [Description](#description)
@@ -75,10 +85,11 @@ const writeToFile = (response) =>
    - [Contributing](#contributing)
    - [Tests](#tests)
    - [Questions](#questions)
+   - [Contact Us](#contact)
 
   
   ## Description 
-  ${response.descritpion}
+  ${response.description}
   
   ## Installation
   ${response.installation}
@@ -94,6 +105,12 @@ const writeToFile = (response) =>
 
   ## Questions
   ${response.questions}
+
+  ## Contact
+  ### GitHub
+  [GitHub](https://github.com/${response.gitHubName})
+  ### E-Mail Address
+  [E-Mail Me](${response.email})
   
 
   ##### *Made with README Generator*`;

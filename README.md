@@ -31,4 +31,8 @@ Generates professional README file
   [E-Mail Me](lundyc0917@gmail.com)
   
 
+<<<<<<< HEAD
   ##### *Made with README Generator*
+=======
+  ##### *Made with README Generator*
+>>>>>>> 86a6393b1f53e09b0fa639792e7595b234e59e67
